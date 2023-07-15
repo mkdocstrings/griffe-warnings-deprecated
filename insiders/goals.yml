@@ -1,0 +1,7 @@
+goals:
+  1000:
+    name: GraviFridge User Manual
+    features:
+    - name: "[Project] Griffe extension for `@typing.deprecated` (PEP 702)"
+      ref: /
+      since: 2023/07/15
