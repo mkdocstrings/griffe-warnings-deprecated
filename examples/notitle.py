@@ -1,8 +1,8 @@
 # notitle.py
-import typing_extensions
+import warnings
 
 
-@typing_extensions.deprecated(
+@warnings.deprecated(
     "This function is deprecated, use [`other_function`][normal.other_function] instead.",
     category=DeprecationWarning,
 )
