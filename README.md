@@ -1,6 +1,8 @@
 # griffe-warnings-deprecated
 
+[![ci](https://github.com/mkdocstrings/griffe-warnings-deprecated/workflows/ci/badge.svg)](https://github.com/mkdocstrings/griffe-warnings-deprecated/actions?query=workflow%3Aci)
 [![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://mkdocstrings.github.io/griffe-warnings-deprecated/)
+[![pypi version](https://img.shields.io/pypi/v/griffe-warnings-deprecated.svg)](https://pypi.org/project/griffe-warnings-deprecated/)
 [![gitpod](https://img.shields.io/badge/gitpod-workspace-708FCC.svg?style=flat)](https://gitpod.io/#https://github.com/mkdocstrings/griffe-warnings-deprecated)
 [![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#griffe-warnings-deprecated:gitter.im)
 
@@ -9,9 +11,9 @@ Griffe extension for `@warnings.deprecated`
 
 ## Installation
 
-This project is available to sponsors only, through my Insiders program.
-See Insiders [explanation](https://mkdocstrings.github.io/griffe-warnings-deprecated/insiders/)
-and [installation instructions](https://mkdocstrings.github.io/griffe-warnings-deprecated/insiders/installation/).
+```bash
+pip install griffe-warnings-deprecated
+```
 
 ## Usage
 

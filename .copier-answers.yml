@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: 1.4.0
+_commit: 1.4.8
 _src_path: gh:pawamoy/copier-uv
 author_email: dev@pawamoy.fr
 author_fullname: Timothée Mazzucotelli
@@ -13,7 +13,7 @@ insiders_email: insiders@pawamoy.fr
 insiders_repository_name: griffe-warnings-deprecated
 project_description: Griffe extension for `@warnings.deprecated` (PEP 702).
 project_name: griffe-warnings-deprecated
-public_release: false
+public_release: true
 python_package_command_line_name: ''
 python_package_distribution_name: griffe-warnings-deprecated
 python_package_import_name: griffe_warnings_deprecated
