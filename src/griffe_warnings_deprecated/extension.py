@@ -10,7 +10,7 @@ logger = get_logger(__name__)
 self_namespace = "griffe_warnings_deprecated"
 mkdocstrings_namespace = "mkdocstrings"
 
-_decorators = {"warnings.deprecated"}
+_decorators = {"warnings.deprecated", "typing_extensions.deprecated"}
 
 
 def _deprecated(obj: Class | Function) -> str | None:
