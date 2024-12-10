@@ -19,7 +19,7 @@ def _deprecated(obj: Class | Function) -> str | None:
         if decorator.callable_path in _decorators and isinstance(decorator.value, ExprCall):
             first_arg = decorator.value.arguments[0]
             try:
-                return ast.literal_eval(first_arg)  # type: ignore
+                return ast.literal_eval(first_arg)  # type: ignore[arg-type]
             except ValueError:
                 logger.debug("%s is not a static string", str(first_arg))
                 return None
