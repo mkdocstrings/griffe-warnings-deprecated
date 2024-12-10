@@ -16,7 +16,7 @@ _decorators = {"warnings.deprecated", "typing_extensions.deprecated"}
 def _deprecated(obj: Class | Function) -> str | None:
     for decorator in obj.decorators:
         if decorator.callable_path in _decorators:
-            return str(decorator.value).split("(", 1)[1].rstrip(")").rsplit(",", 1)[0].lstrip("f")[1:-1]
+            return str(decorator.value.arguments[0]).lstrip("f")[1:-1]
     return None
 
 
