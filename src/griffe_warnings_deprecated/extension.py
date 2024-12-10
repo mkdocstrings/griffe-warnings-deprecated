@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import ast
 from typing import Any
 
-from griffe import Class, Docstring, DocstringSectionAdmonition, Extension, Function, get_logger
+from griffe import Class, Docstring, DocstringSectionAdmonition, ExprCall, Extension, Function, get_logger
 
 logger = get_logger(__name__)
 self_namespace = "griffe_warnings_deprecated"
@@ -15,8 +16,13 @@ _decorators = {"warnings.deprecated", "typing_extensions.deprecated"}
 
 def _deprecated(obj: Class | Function) -> str | None:
     for decorator in obj.decorators:
-        if decorator.callable_path in _decorators:
-            return str(decorator.value).split("(", 1)[1].rstrip(")").rsplit(",", 1)[0].lstrip("f")[1:-1]
+        if decorator.callable_path in _decorators and isinstance(decorator.value, ExprCall):
+            first_arg = decorator.value.arguments[0]
+            try:
+                return ast.literal_eval(first_arg)  # type: ignore[arg-type]
+            except ValueError:
+                logger.debug("%s is not a static string", str(first_arg))
+                return None
     return None
 
 
