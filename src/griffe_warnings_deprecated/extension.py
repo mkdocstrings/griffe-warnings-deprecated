@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import ast
 from typing import Any
 
 from griffe import Class, Docstring, DocstringSectionAdmonition, ExprCall, Extension, Function, get_logger
@@ -16,7 +17,8 @@ _decorators = {"warnings.deprecated", "typing_extensions.deprecated"}
 def _deprecated(obj: Class | Function) -> str | None:
     for decorator in obj.decorators:
         if decorator.callable_path in _decorators and isinstance(decorator.value, ExprCall):
-            return str(decorator.value.arguments[0]).lstrip("f")[1:-1]
+            message = str(decorator.value.arguments[0]).removeprefix("f")
+            return ast.literal_eval(message)
     return None
 
 
