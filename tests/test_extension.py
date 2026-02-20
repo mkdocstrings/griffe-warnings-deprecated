@@ -8,7 +8,7 @@ from textwrap import dedent
 import pytest
 from griffe import DocstringAdmonition, DocstringSectionAdmonition, load_extensions, temporary_visited_module
 
-from griffe_warnings_deprecated.extension import WarningsDeprecatedExtension
+from griffe_warnings_deprecated import WarningsDeprecatedExtension
 
 
 @pytest.mark.parametrize(
