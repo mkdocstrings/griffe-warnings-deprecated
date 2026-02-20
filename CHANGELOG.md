@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [1.1.1](https://github.com/mkdocstrings/griffe-typing-deprecated/releases/tag/1.1.1) - 2026-02-20
+
+<small>[Compare with 1.1.0](https://github.com/mkdocstrings/griffe-typing-deprecated/compare/1.1.0...1.1.1)</small>
+
+### Build
+
+- Depend on griffelib instead of griffe ([7e1facb](https://github.com/mkdocstrings/griffe-typing-deprecated/commit/7e1facb4b0f309ada82660d7f484eb03aaa24b69) by Timothée Mazzucotelli).
+
+### Code Refactoring
+
+- Deprecate extension submodule ([a72049b](https://github.com/mkdocstrings/griffe-typing-deprecated/commit/a72049b4385eda0861b487ae9beee8615571381a) by Timothée Mazzucotelli).
+- Move modules into internal folder ([528b18e](https://github.com/mkdocstrings/griffe-typing-deprecated/commit/528b18eae6dafff66bbbc1060dc94195b5f04d77) by Timothée Mazzucotelli).
+
 ## [1.1.0](https://github.com/mkdocstrings/griffe-typing-deprecated/releases/tag/1.1.0) - 2024-12-10
 
 <small>[Compare with 1.0.0](https://github.com/mkdocstrings/griffe-typing-deprecated/compare/1.0.0...1.1.0)</small>
