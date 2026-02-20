@@ -1,10 +1,9 @@
 # griffe-warnings-deprecated
 
 [![ci](https://github.com/mkdocstrings/griffe-warnings-deprecated/workflows/ci/badge.svg)](https://github.com/mkdocstrings/griffe-warnings-deprecated/actions?query=workflow%3Aci)
-[![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://mkdocstrings.github.io/griffe-warnings-deprecated/)
+[![documentation](https://img.shields.io/badge/docs-zensical-FF9100.svg?style=flat)](https://mkdocstrings.github.io/griffe-warnings-deprecated/)
 [![pypi version](https://img.shields.io/pypi/v/griffe-warnings-deprecated.svg)](https://pypi.org/project/griffe-warnings-deprecated/)
-[![gitpod](https://img.shields.io/badge/gitpod-workspace-708FCC.svg?style=flat)](https://gitpod.io/#https://github.com/mkdocstrings/griffe-warnings-deprecated)
-[![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#griffe-warnings-deprecated:gitter.im)
+[![gitter](https://img.shields.io/badge/matrix-chat-4DB798.svg?style=flat)](https://app.gitter.im/#/room/#griffe-warnings-deprecated:gitter.im)
 
 Griffe extension for `@warnings.deprecated`
 ([PEP 702](https://peps.python.org/pep-0702/)).
@@ -72,3 +71,8 @@ Options:
     Can be set to null to use the message as title.
 - `label`: The label added to deprecated objects (default: deprecated).
     Can be set to null.
+
+## Sponsors
+
+<!-- sponsors-start -->
+<!-- sponsors-end -->

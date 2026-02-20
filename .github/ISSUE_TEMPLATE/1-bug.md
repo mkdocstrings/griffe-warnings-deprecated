@@ -50,7 +50,7 @@ PASTE TRACEBACK HERE
      redacting sensitive information. -->
 
 ```bash
-python -m griffe_warnings_deprecated.debug  # | xclip -selection clipboard
+python -m griffe_warnings_deprecated._internal.debug  # | xclip -selection clipboard
 ```
 
 PASTE MARKDOWN OUTPUT HERE
