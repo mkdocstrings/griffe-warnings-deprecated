@@ -1,4 +1,4 @@
-"""Griffe extension for `@warnings.deprecated` (PEP 702)."""
+# Griffe extension for `@warnings.deprecated` (PEP 702).
 
 from __future__ import annotations
 
@@ -7,10 +7,9 @@ from typing import Any
 
 from griffe import Class, Docstring, DocstringSectionAdmonition, ExprCall, Extension, Function, get_logger
 
-logger = get_logger(__name__)
-self_namespace = "griffe_warnings_deprecated"
-mkdocstrings_namespace = "mkdocstrings"
-
+_logger = get_logger(__name__)
+_self_namespace = "griffe_warnings_deprecated"
+_mkdocstrings_namespace = "mkdocstrings"
 _decorators = {"warnings.deprecated", "typing_extensions.deprecated"}
 
 
@@ -21,7 +20,7 @@ def _deprecated(obj: Class | Function) -> str | None:
             try:
                 return ast.literal_eval(first_arg)  # type: ignore[arg-type]
             except ValueError:
-                logger.debug("%s is not a static string", str(first_arg))
+                _logger.debug("%s is not a static string", str(first_arg))
                 return None
     return None
 
@@ -44,8 +43,11 @@ class WarningsDeprecatedExtension(Extension):
         """
         super().__init__()
         self.kind = kind
+        """The kind of the admonition to insert in the docstring."""
         self.title = title or ""
+        """The title of the admonition to insert in the docstring."""
         self.label = label
+        """The label added to deprecated objects."""
 
     def _insert_message(self, obj: Function | Class, message: str) -> None:
         title = self.title
