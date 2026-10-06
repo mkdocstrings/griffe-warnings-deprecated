@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [1.1.2](https://github.com/mkdocstrings/griffe-warnings-deprecated/releases/tag/1.1.2) - 2026-10-06
+
+<small>[Compare with 1.1.1](https://github.com/mkdocstrings/griffe-warnings-deprecated/compare/1.1.1...1.1.2)</small>
+
+### Build
+
+- Drop support for Python 3.10 ([2cfb851](https://github.com/mkdocstrings/griffe-warnings-deprecated/commit/2cfb851cc7828652b2e0dfc919ade2fe2f25365a) by Timothée Mazzucotelli).
+
 ## [1.1.1](https://github.com/mkdocstrings/griffe-typing-deprecated/releases/tag/1.1.1) - 2026-02-20
 
 <small>[Compare with 1.1.0](https://github.com/mkdocstrings/griffe-typing-deprecated/compare/1.1.0...1.1.1)</small>
