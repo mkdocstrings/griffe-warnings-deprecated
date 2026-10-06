@@ -7,6 +7,12 @@
         <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/changelog/</loc>
       </url>
       <url>
+        <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/code_of_conduct/</loc>
+      </url>
+      <url>
+        <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/contributing/</loc>
+      </url>
+      <url>
         <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/credits/</loc>
       </url>
       <url>
@@ -14,11 +20,5 @@
       </url>
       <url>
         <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/reference/api/</loc>
-      </url>
-      <url>
-        <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/contributing/</loc>
-      </url>
-      <url>
-        <loc>https://mkdocstrings.github.io/griffe-warnings-deprecated/code_of_conduct/</loc>
       </url>
 </urlset>
